@@ -65,6 +65,8 @@
             }
         </style>
 
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
         {!! ssr('js/entry-server.js')->render()['styles'] !!}
     </head>
     <body>

@@ -1,5 +1,6 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
 
-// Variables
-@import 'variables';
+@tailwind utilities;
