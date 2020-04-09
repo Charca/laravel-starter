@@ -6,6 +6,8 @@
 
         <title>Laravel</title>
 
+        <script defer src="{{ mix('js/entry-client.js') }}"></script>
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
@@ -83,6 +85,8 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
+
+                <div id="app">{!! ssr('js/entry-server.js')->render() !!}</div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
