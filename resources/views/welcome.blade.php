@@ -64,6 +64,8 @@
                 margin-bottom: 30px;
             }
         </style>
+
+        {!! ssr('js/entry-server.js')->render()['styles'] !!}
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -86,7 +88,7 @@
                     Laravel
                 </div>
 
-                <div id="app">{!! ssr('js/entry-server.js')->render() !!}</div>
+                <div id="app">{!! ssr('js/entry-server.js')->render()['html'] !!}</div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>

@@ -11,6 +11,7 @@
     },
     "devDependencies": {
         "@babel/preset-react": "^7.0.0",
+        "babel-plugin-styled-components": "^1.10.7",
         "cross-env": "^7.0",
         "laravel-mix": "^5.0.1",
         "react": "^16.2.0",
@@ -18,5 +19,8 @@
         "resolve-url-loader": "^3.1.0",
         "sass": "^1.15.2",
         "sass-loader": "^8.0.0"
+    },
+    "dependencies": {
+        "styled-components": "^5.1.0"
     }
 }

@@ -1,7 +1,21 @@
 import React from 'react'
-import ReactDOMServer from 'react-dom/server'
+import { renderToString } from 'react-dom/server'
+import { ServerStyleSheet } from 'styled-components'
 import App from './app'
 
-const html = ReactDOMServer.renderToString(<App />)
+const sheet = new ServerStyleSheet()
+let html
+let styleTags
 
-dispatch(html)
+try {
+  html = renderToString(sheet.collectStyles(<App />))
+  styleTags = sheet.getStyleTags() // or sheet.getStyleElement();
+} catch (error) {
+  console.error(error)
+} finally {
+  sheet.seal()
+  dispatch({
+    styles: styleTags,
+    html,
+  })
+}
