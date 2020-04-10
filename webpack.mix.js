@@ -1,6 +1,7 @@
 const mix = require('laravel-mix')
 const tailwindcss = require('tailwindcss')
 require('laravel-mix-purgecss')
+require('laravel-mix-react-css-modules')
 
 /*
  |--------------------------------------------------------------------------
@@ -23,3 +24,4 @@ mix
   .purgeCss({
     enabled: mix.inProduction(),
   })
+  .reactCSSModules()
