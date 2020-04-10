@@ -62,6 +62,8 @@
                 margin-bottom: 30px;
             }
         </style>
+
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
     <body>
         <div class="flex-center position-ref full-height">
