@@ -1,10 +1,6 @@
 /* purgecss start ignore */
-@tailwind base;
-@tailwind components;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
 /* purgecss end ignore */
 
-@tailwind utilities;
-
-.test {
-  color: green;
-}
+@import 'tailwindcss/utilities';
